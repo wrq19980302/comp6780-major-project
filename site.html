@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+<!-- This is the HEADER section.......................... -->
+
+<head>
+  <!-- This statement tells browsers how to understand our characters -->
+  <meta charset="utf-8">
+  <!-- This is our title. It is mandatory. -->
+  <title>sitemap</title>
+  <link rel="stylesheet" type="text/css" href="my passion.css">
+  <link rel="stylesheet" tpye="text/css" href="print.css" media="print">
+  <!-- this meta name is to identify website version in JSBin -->
+  <meta name="description" content="Site map page">
+</head>
+
+<!-- This is the body section  -->
+
+<body background="white">
+
+  <!-- This is our heading for our title at the top of the page -->
+  <!-- open "navigation" division -->
+  <div id="navigation">
+    <h1> National Disability Insurance Scheme </h1>
+
+    <!-- open "menu" division -->
+    <div id="menu">
+
+      <!-- This is our menu, using anchor tag links. -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="post.html">Post</a></li>
+        <li><a href="author.html">About author</a></li>
+        <li><a href="site.html">About my site</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="sitemap.html">Site map</a></li>
+      </ul>
+
+
+      <!-- close "menu" division -->
+    </div>
+
+    <!-- close "navigation" division -->
+  </div>
+
+  <!-- This tag opens a division called content that separates the webpage content from the navigation title and menu bar -->
+  <div id="content">
+
+    <!-- This is our anchor tag for our "Feedback" menu item -->
+    <a id="site"></a>
+
+    <!-- This is our subheading for more main content -->
+
+    <h2>My reflection</h2>
+    <p>The design of this website page refers to my graduate course "Web Development and Design". As a newbie in web development, I am very grateful for what I have learned in this course. Therefore, I will share with you my reflection of the development process of this website.</p>
+    <p>Firstly, the site structure needs to stay close to the topic. The website focuses on introducing and promoting the NDIS program, expressing the difficult situation of people with disabilities and the benefits of the NDIS program. After learning web design, I think a good structure should follow the content of the website, divide the situation of the disabled and the NDIS project into different pages, and divide the content at different levels such as the introduction of the NDIS, the types of NDIS services, how to participate in the NDIS as a The title is applied on a page.</p>
+    <p>Secondly, website interaction needs to satisfy user experience. The website is written in html, css and some JavaScript languages. These three parts of the language provide the website with a clear structure and content, a variety of formats and colors, and user interaction. Combined with the NDIS theme, this site can still be improved in terms of user interaction flexibility. For example, more buttons can be added on the home page to jump to the official page of the NDIS project, so that users can obtain more detailed information. At the same time, you can add more zoom effects to the album set on the post page. When the mouse moves over the album set, you can zoom in on the photo to make the picture clearer.</p>
+    <p>Finally, the site needs an index to indicate. Sitemap, imagemap and photo gallery are three different indexes. The first one describes the website architecture, which divides the website's themes, pages, and levels. The second describes a collection of content, which categorizes the detailed content by mapping different parts of an image to specific links. The third is a summary of related pictures, which uses a collection of pictures to associate various pictures with themes. In the process of building a website with the NDIS project as the theme, all three indexing methods can be applied.</p>
+  
+     <!-- This is an additional horizonal rule to separate the content -->
+     <hr>
+    <h2>Music!</h2>
+    <p>The results of reflection tell me that one of the ways to enhance the user experience is to create more interactive effects. Piano is another hobby of mine. So, a creative idea was born: I added a piano song to play a nice melody. This could be an interesting case for improving the user experience of a website. Let's play music!</p>
+    <audio controls>
+      <source src="piano.mp3" type="audio/mpeg">
+    </audio>
+
+     <!-- This is an additional horizonal rule to separate the content -->
+     <hr>
+    <h2>Color!</h2>
+    <p>The results of reflection tell me that one of the ways to meet user needs is to increase site diversity. Javascript can be used to achieve it. So, the other creative idea was born: I created website color change button. There are lignt and dark modes to choose from. This could be an resonable case for improving the user experience of a website.</p>
+
+    <script>
+      // Function to change webpage background color
+      function changeBodyBg(color){
+          document.body.style.background = color;
+      }
+      
+  </script>
+   <div>
+    <label>Let's change webpage background style to:</label>
+    <button type="button" onclick="changeBodyBg('lightyellow');">light</button>
+    <button type="button" onclick="changeBodyBg('lightgrey');">dark</button>
+    <button type="button" onclick="changeBodyBg('white');">reset</button>
+</div>
+
+    <!-- Close of content division -->
+  </div>
+
+  <!-- Close body of webpage -->
+</body>
+
+<!-- Close html-->
+
+</html>

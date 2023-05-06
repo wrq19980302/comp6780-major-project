@@ -1,0 +1,140 @@
+
+/* This is my style sheet */
+
+
+/* Example of CSS replacing the HTML style sheet we used in the previous demo version */
+
+body {background-color: white}
+
+h1   {color:black;
+      font-weight: bold;
+      text-align: center;
+      font-size: 50px
+    }
+
+h2   {color:black;
+      font-weight: bold;
+      font-size: 35px}
+
+h3   {color:black;
+      font-weight: bold;
+      font-size: 30px}
+
+h4   {color:black;
+      font-weight: bold;
+      font-size: 25px}
+
+P   {color:black;
+      font-size: 20px}
+
+ul  {color:black;
+      font-size: 20px}
+
+/* CSS rules for navigation division */
+#navigation {
+ display:none
+}
+
+/* This is our pseudo element to make our menu item targets appear below the menubar when we click on a menu item. To do this we use :target:before to create a block of empty content of height 105 pixels before the target. */
+
+:target:before {
+content:"";
+display: block;
+/* fixed header height*/ 
+height:70px; 
+}  
+
+/* CSS rules for formatting content division */
+
+#content {
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 0px;
+}
+
+
+/* Menu division: format the menu generally including background colour and style */
+
+#menu {
+ display:none
+}
+
+/* Menu division: format the unordered list so that it appears directly below the title of the page and below the edge of the colour background */
+#menu ul {
+ display:none
+  }
+
+/* Menu division: format the list items so that they display across the page instead of in a vertical list */
+#menu li {
+ display:none
+}
+
+/* Menu division: format the link items so that they are dark blue, spaced apart, and do not have underlines */
+#menu a {
+ display:none
+}
+
+/*These are our pseudo elements to style the menu item links depending on whether they have been visited or not and on hover. */
+
+/* unvisited link */
+#menu a:link {
+ display:none
+}
+
+/* visited link */
+#menu a:visited {
+  display:none
+}
+
+/* mouse over link */
+#menu a:hover {
+  display:none
+}
+
+/* Our form formatting */
+
+form {background: antiquewhite;
+      border: 2px solid black;
+      border-radius: 5px;
+      padding: 7px;
+}
+
+
+textarea {
+  width: 90%;
+  height: 3em;
+  
+}
+
+
+/* raster and vector divisions: format images so they float left and have a margin between them and the wrapped text.  Also format clear division to allow restart of next content below wrapped text. */
+
+
+
+#left img {
+  width: 100%;
+  float: center;
+}
+
+#right img {
+  width: 100%;
+  float: center;
+}
+
+#clear {
+  clear: left;
+}
+
+/* Make video1, video2 and comic central */
+#video1 {
+ display:none
+}
+
+#video2 {
+ display:none
+}
+
+#comic {
+ display:none
+}

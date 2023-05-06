@@ -1,0 +1,154 @@
+
+/* This is my style sheet */
+
+
+/* Example of CSS replacing the HTML style sheet we used in the previous demo version */
+
+body {background-color: white}
+
+h1   {color: black;
+      font-weight: bold;
+      text-align: center;
+      font-size: 60px}
+
+h2   {color:purple;
+      font-weight: bold;
+      font-size: 50px}
+
+h3   {color:lightblue;
+      font-weight: bold;
+      font-size: 40px}
+
+h4   {color:black;
+      font-weight: bold;
+      font-size: 30px}
+
+P   {color:black;
+      font-size: 20px}
+
+ul  {color:black;
+      font-size: 18px}
+
+/* CSS rules for navigation division */
+#navigation {
+  width: 100%;
+  background: rgb(160, 155, 227);
+  height: 140px;
+  border-radius: 6px;
+}
+
+/* This is our pseudo element to make our menu item targets appear below the menubar when we click on a menu item. To do this we use :target:before to create a block of empty content of height 105 pixels before the target. */
+
+:target:before {
+content:"";
+display: block;
+/* fixed header height*/ 
+height:70px; 
+}  
+
+/* CSS rules for formatting content division */
+
+#content {
+  padding-top: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+
+
+/* Menu division: format the menu generally including background colour and style */
+
+#menu {
+  width: 100%;
+  height: 40px;
+  font-size: 25px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 6px;
+}
+
+/* Menu division: format the unordered list so that it appears directly below the title of the page and below the edge of the colour background */
+#menu ul {
+  height: auto;
+  padding: 8px 0px;
+  margin: 0px;
+  }
+
+/* Menu division: format the list items so that they display across the page instead of in a vertical list */
+#menu li {
+display: inline;
+padding: 50px;
+}
+
+/* Menu division: format the link items so that they are dark blue, spaced apart, and do not have underlines */
+#menu a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 8px 8px 8px;
+}
+
+/*These are our pseudo elements to style the menu item links depending on whether they have been visited or not and on hover. */
+
+/* unvisited link */
+#menu a:link {
+    color: black;
+}
+
+/* visited link */
+#menu a:visited {
+    color: black;
+}
+
+/* mouse over link */
+#menu a:hover {
+    color: purple;
+}
+
+/* Our form formatting */
+
+form {background: antiquewhite;
+      border: 2px solid black;
+      border-radius: 5px;
+      padding: 7px;
+}
+
+
+textarea {
+  width: 90%;
+  height: 3em;
+  
+}
+
+
+/* raster and vector divisions: format images so they float left and have a margin between them and the wrapped text.  Also format clear division to allow restart of next content below wrapped text. */
+
+
+
+#left img {
+  float: left;
+  margin-right: 20px;
+}
+
+#right img {
+  float: right;
+  margin-right: 20px;
+}
+
+#clear {
+  clear: left;
+}
+
+/* Make video1, video2 and comic central */
+#video1 {
+  text-align: center;
+}
+
+#video2 {
+  text-align: center;
+}
+
+#comic {
+  text-align: center;
+}
